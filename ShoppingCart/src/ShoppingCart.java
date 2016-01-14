@@ -5,7 +5,7 @@ public class ShoppingCart {
 	
 	private boolean finished;
 	
-	Customer customer;
+	private Customer customer;
 	
 	private Product [] products;
 	

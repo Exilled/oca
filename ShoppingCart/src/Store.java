@@ -27,7 +27,7 @@ public class Store {
 		ShoppingCart shoppingCart = new ShoppingCart();
 		
 		
-		shoppingCart.customer = customer;
+		shoppingCart.setCustomer(customer);
 		
 		shoppingCart.setProducts(10);
 		
@@ -37,7 +37,7 @@ public class Store {
 		
 		System.out.println("Total: " + shoppingCart.getTotal());
 		System.out.println("Customer Name: "+ customer.name);
-		System.out.println("SC Customer Name: "+ shoppingCart.customer.name);
+		System.out.println("SC Customer Name: "+ shoppingCart.getCustomer().name);
 		
 		System.out.println("OLD CART");
 		shoppingCart.printProduct();
