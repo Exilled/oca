@@ -29,13 +29,13 @@ public class Store {
 		
 		shoppingCart.customer = customer;
 		
-		shoppingCart.products = new Product[10];
+		shoppingCart.setProducts(10);
 		
 		shoppingCart.addProduct(p1);
 		shoppingCart.addProduct(p2);
 		shoppingCart.addProduct(p3);
 		
-		System.out.println("Total: " + shoppingCart.total);
+		System.out.println("Total: " + shoppingCart.getTotal());
 		System.out.println("Customer Name: "+ customer.name);
 		System.out.println("SC Customer Name: "+ shoppingCart.customer.name);
 		

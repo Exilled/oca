@@ -1,15 +1,15 @@
 
 public class ShoppingCart {
 	
-	float total;
+	private float total;
 	
-	boolean finished;
+	private boolean finished;
 	
 	Customer customer;
 	
-	Product [] products;
+	private Product [] products;
 	
-	int cartSize;
+	private int cartSize;
 	
 	
 	public void addProduct(Product product){
@@ -79,6 +79,42 @@ public class ShoppingCart {
 			
 		}
 		
+	}
+	
+	public float getTotal() {
+		return total;
+	}
+
+	public void setTotal(float total) {
+		this.total = total;
+	}
+	
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Product[] getProducts() {
+		return products;
+	}
+
+	public void setProducts(int size) {
+		this.products = new Product[size];
+	}
+
+	public int getCartSize() {
+		return cartSize;
+	}
+
+	public void setCartSize(int cartSize) {
+		this.cartSize = cartSize;
+	}
+
+	public void setFinished(boolean finished) {
+		this.finished = finished;
 	}
 	
 }
