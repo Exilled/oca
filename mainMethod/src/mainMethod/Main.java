@@ -18,8 +18,11 @@ public class Main {
 		 * char   -    16   texto
 		 * 
 		 * 
-		 * 
-		 * 
+		 * operadores de precedencia 
+		 *  1) () parenteses
+		 *  2) incrementos/decrementos
+		 *  3) * / %
+		 *  4) + -
 		 * 
 		 */
 		
