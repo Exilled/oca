@@ -5,22 +5,22 @@ public class Store {
 		
 		
 		Customer customer = new Customer();
-		customer.name = "Diogo";
+		customer.setName("Diogo");
 		
 		Product p1 = new Product();
-		p1.id= 1;
-		p1.name = "batatas";
-		p1.price = 2.3f;
+		p1.setId(1);
+		p1.setName("batatas");
+		p1.setPrice(2.3f);
 		
 		Product p2 = new Product();
-		p2.id= 2;
-		p2.name = "couves";
-		p2.price = 0.6f;
+		p2.setId(2);
+		p2.setName("couves");
+		p2.setPrice(0.6f);
 		
 		Product p3 = new Product();
-		p3.id= 3;
-		p3.name = "cenouras";
-		p3.price = 1.4f;
+		p3.setId(3);
+		p3.setName("cenouras");
+		p3.setPrice(1.4f);
 		
 		
 		
@@ -36,13 +36,13 @@ public class Store {
 		shoppingCart.addProduct(p3);
 		
 		System.out.println("Total: " + shoppingCart.getTotal());
-		System.out.println("Customer Name: "+ customer.name);
-		System.out.println("SC Customer Name: "+ shoppingCart.getCustomer().name);
+		System.out.println("Customer Name: "+ customer.getName());
+		System.out.println("SC Customer Name: "+ shoppingCart.getCustomer().getName());
 		
 		System.out.println("OLD CART");
 		shoppingCart.printProduct();
 		
-		shoppingCart.removeProduct(p2.id);
+		shoppingCart.removeProduct(p2.getId());
 		
 		System.out.println("\nNEW CART");
 		shoppingCart.printProduct();

@@ -18,7 +18,7 @@ public class ShoppingCart {
 		if(!finished && cartSize < products.length){
 			
 			products[cartSize++] = product;
-			total += product.price;
+			total += product.getPrice();
 			
 		}
 	
@@ -45,8 +45,8 @@ public class ShoppingCart {
 		
 		for (int i = 0; i < products.length; i++) {
 			
-			if(products[i].id == id){
-				total -= products[i].price;
+			if(products[i].getId() == id){
+				total -= products[i].getPrice();
 				products[i] = products[--cartSize];
 				products[cartSize] = null;
 				break;
@@ -72,8 +72,8 @@ public class ShoppingCart {
 			
 			if(products[i] != null){
 				System.out.println("---------\nPRODUTO:"+ i);
-				System.out.println(products[i].id);
-				System.out.println(products[i].name);
+				System.out.println(products[i].getId());
+				System.out.println(products[i].getName());
 				
 			}
 			
