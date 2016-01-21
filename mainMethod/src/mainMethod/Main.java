@@ -6,17 +6,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		
-		/* type  -  size(bit)
-		 * 
-		 * short  -   16   integral
-		 * int    -   32   integral
-		 * float  -   32   , flutuante
-		 * double -   62   , flutuante
-		 * long   -   64   integral
-		 * byte   -    8   integral
-		 * boolean-       
-		 * char   -    16   texto
-		 * 
+		/*
 		 * 
 		 * operadores de precedencia 
 		 *  1) () parenteses
